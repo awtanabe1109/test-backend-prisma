@@ -8,6 +8,7 @@
  RUN yarn install
  RUN yarn run prisma generate
  COPY . .
+ EXPOSE 8080
  RUN yarn build
 
  FROM node:16 AS runner
