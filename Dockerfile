@@ -21,5 +21,6 @@
  COPY start.sh ./
  RUN yarn install
  COPY --from=builder /app/dist ./dist
+ CMD yarn start
 #  RUN chmod +x ./start.sh
 #  CMD ["./start.sh"]
