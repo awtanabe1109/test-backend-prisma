@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL")
+  url      = "mysql://myuser:password@localhost/testdb??socket=/cloudsql/test-gcp-book:asia-northeast1:testdb"
 }
 
 
